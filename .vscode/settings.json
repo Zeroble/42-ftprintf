@@ -1,0 +1,13 @@
+{
+	"files.associations": {
+		"get_next_lines.h": "c",
+		"get_next_line.h": "c",
+		"fcntl.h": "c",
+		"istream": "c",
+		"stdlib.h": "c",
+		"unistd.h": "c",
+		"stdarg.h": "c",
+		"ft_printf.h": "c",
+		"__locale": "c"
+	}
+}
