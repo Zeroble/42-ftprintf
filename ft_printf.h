@@ -6,7 +6,7 @@
 /*   By: minylee <minylee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 17:03:51 by minylee           #+#    #+#             */
-/*   Updated: 2023/03/06 22:58:35 by minylee          ###   ########.fr       */
+/*   Updated: 2023/03/10 15:48:09 by minylee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ int		percentage_format_c(char c);
 int		percentage_format_x(char flag, unsigned int n);
 int		percentage_format_p(void *num);
 int		get_base(char *c);
+size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 
 #endif

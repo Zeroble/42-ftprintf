@@ -6,13 +6,13 @@
 /*   By: minylee <minylee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/12 21:04:53 by minylee           #+#    #+#             */
-/*   Updated: 2023/03/06 22:58:54 by minylee          ###   ########.fr       */
+/*   Updated: 2023/03/10 15:42:49 by minylee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-int	ft_cnt_num_cipher(long long n)
+static int	ft_cnt_num_cipher(long long n)
 {
 	int	cnt;
 
@@ -30,7 +30,7 @@ int	ft_cnt_num_cipher(long long n)
 	return (cnt);
 }
 
-int	digit_to_ascii(int c)
+static int	digit_to_ascii(int c)
 {
 	if (c >= 0 && c <= 9)
 		return (c + 48);
@@ -38,12 +38,12 @@ int	digit_to_ascii(int c)
 		return (-1);
 }
 
-int	pre_exception(const int n, char **ret)
+static int	pre_exception(const int n, char **ret)
 {
 	if (n == 0)
 	{
 		*ret = malloc(2 * sizeof(char));
-		*ret = "0";
+		ft_strlcpy(*ret, "0", 2);
 		return (-1);
 	}
 	return (1);

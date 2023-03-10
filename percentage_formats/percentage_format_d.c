@@ -6,12 +6,11 @@
 /*   By: minylee <minylee@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 20:13:02 by minylee           #+#    #+#             */
-/*   Updated: 2023/03/06 22:59:08 by minylee          ###   ########.fr       */
+/*   Updated: 2023/03/10 15:42:38 by minylee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
-#include <stdio.h>
 
 int	percentage_format_d(long long digit)
 {
